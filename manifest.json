@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "PS Volume",
+    "version": "1.0",
+    "description": "Adds a volume slider to replay.pokemonshowdown.com",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+    {
+        "matches": ["https://replay.pokemonshowdown.com/*"],
+        "js": ["scripts/volume.js"]
+    }
+    ],
+    "browser_action": {
+        "default_icon": "icons/piggy.png",
+        "default_title": "PS Volume"
+    }
+}
