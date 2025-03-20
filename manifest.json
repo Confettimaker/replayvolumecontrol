@@ -13,7 +13,6 @@
     }
     ],
     "browser_action": {
-        "default_icon": "icons/piggy.png",
         "default_title": "PS Volume"
     }
 }
