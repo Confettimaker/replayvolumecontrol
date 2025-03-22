@@ -19,15 +19,11 @@ setBgmVolumeCode = "BattleSound.setBgmVolume(localStorage.getItem('replayVolume'
 removeAttributeCode = "document.getElementById('main').removeAttribute('onmouseover')";
 document.getElementById("main").setAttribute("onmouseover", setEffectVolumeCode + setBgmVolumeCode + removeAttributeCode);
 
-let button = document.createElement("button");
-button.id = "volume-setter";
-button.textContent = "Set Volume";
-
 setEffectVolumeCode = "BattleSound.setEffectVolume(document.getElementById('volume-slider').value); ";
 setBgmVolumeCode = "BattleSound.setBgmVolume(document.getElementById('volume-slider').value); ";
+setMuteUnMuteCode = "BattleSound.setMute(true); BattleSound.setMute(false);";
 setLocalStorageCode = "localStorage.setItem('replayVolume', document.getElementById('volume-slider').value)";
-button.setAttribute("onclick", setEffectVolumeCode + setBgmVolumeCode + setLocalStorageCode);
+volume.setAttribute("onchange", setEffectVolumeCode + setBgmVolumeCode + setMuteUnMuteCode + setLocalStorageCode);
 
 
 document.getElementsByClassName("replay-controls")[0].appendChild(volume);
-document.getElementsByClassName("replay-controls")[0].appendChild(button);
