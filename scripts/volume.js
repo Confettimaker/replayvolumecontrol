@@ -1,7 +1,7 @@
 url = window.location.toString();
 baseURL = "https://replay.pokemonshowdown.com/";
 
-if (url == "https://replay.pokemonshowdown.com/" || url.indexOf("=") > 0) // Change how battle links work so I can get the slider to load
+if (url == "https://replay.pokemonshowdown.com/" || url.indexOf("=") > 0) // Change how replay links work so I can get the slider to load
 {
     getLinksCode = "let links = document.getElementsByTagName('a');";
     forLoopCode = "for ( let link = 0; link < links.length; link ++) { href = links[link].href; if (!href.includes('javascript')) { newHref = 'javascript:window.location=`' + href + '`'; links[link].setAttribute('href', newHref); } }";
