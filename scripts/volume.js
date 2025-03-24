@@ -1,5 +1,5 @@
+// baseURL = "https://replay.pokemonshowdown.com/";
 url = window.location.toString();
-baseURL = "https://replay.pokemonshowdown.com/";
 
 if (url == "https://replay.pokemonshowdown.com/" || url.indexOf("=") > 0) // Change how replay links work so I can get the slider to load
 {
@@ -37,5 +37,5 @@ else
     volume.setAttribute("onchange", setEffectVolumeCode + setBgmVolumeCode + setMuteUnMuteCode + setLocalStorageCode);
     
     
-    document.getElementsByClassName("replay-controls")[0].appendChild(volume);
+    document.getElementsByClassName("replay-controls")[0].prepend(volume);
 }
