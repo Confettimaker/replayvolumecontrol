@@ -1,6 +1,7 @@
 # The aim of this project is to create a seemless volume control extension for Pokemon Showdown replays.
 
 The current state of this project is extremely simple. I am no front end developer. Please help to make it look nice and operate better.
+Due to the fact that this is an unofficial add-on, you may have to repeat the installation process upon browser restart.
 
 # How to install this extension (FireFox)
 
