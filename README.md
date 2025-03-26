@@ -3,6 +3,9 @@
 The current state of this project is extremely simple. I am no front end developer. Please help to make it look nice and operate better.
 Due to the fact that this is an unofficial add-on, you may have to repeat the installation process upon browser restart.
 
+# Download it here
+[Release Link](https://github.com/Confettimaker/replayvolumecontrol/releases/tag/1.0)
+
 # How to install this extension (FireFox)
 
 ### 1.) Enter `about:debugging` in the URL bar and click `This Firefox`
